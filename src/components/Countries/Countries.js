@@ -16,9 +16,9 @@ const Countries = () => {
                 Travelling all around the world in different countries
       </h1>
             <h2>Countries available: {countries.length}</h2>
-            <div>
+            <div className="country-container">
                 {
-                    countries.map(country => <Country name={country.name} capital={country.capital}></Country>
+                    countries.map(country => <Country country={country} key={country.name}></Country>
                     )
                 }
             </div>
